@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.color-nav {
+  background-color: #61d5a8;
+}
+
+.nav-link,
+.login {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61d5a8, 0 0 40px #61d5a8,
+    0 0 50px #61d5a8, 0 0 60px #61d5a8, 0 0 70px #61d5a8;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61d5a8, 0 0 40px #61d5a8,
+    0 0 50px #61d5a8, 0 0 60px #61d5a8, 0 0 70px #61d5a8;
+  font-weight: 600;
+}
+
+/* BANNER */
+.banner,
+.tujuan {
+  height: auto;
+  background: conic-gradient(
+    from 0deg at 0% 100%,
+    #36ec7e 0deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+}
+
+.title-banner,
+.title-tujuan {
+  color: #000;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.desc-banner,
+.desc-tujuan {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.img-fluid {
+  margin-top: 40px;
+}
+
+/* FITUR FITUR */
+.fitur,
+.team {
+  height: auto;
+  background: conic-gradient(
+    from 0deg at 0% 100%,
+    #24c486 0deg,
+    rgba(36, 196, 134, 0) 360deg
+  );
+}
+
+.fitur-title,
+.team-title {
+  color: #000;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.card {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-title {
+  color: #000;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.title-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+.footer {
+  height: auto;
+  background-color: #61d5a8;
+}
+
+.footer-title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.footer-copyright {
+  color: #034f24;
+  font-size: 14px;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  /* FITUR FITUR */
+  .card-title {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  /* TUJUAN */
+  /* .tujuan .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tujuan .col-md-6 {
+    width: 100%;
+  } */
+
+  /* TEAM */
+  .team {
+    height: auto;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  /* BANNER */
+  .banner,
+  .tujuan {
+    height: 100vh;
+    background: conic-gradient(
+      from 0deg at 0% 100%,
+      #36ec7e 0deg,
+      rgba(255, 255, 255, 0) 360deg
+    );
+  }
+
+  .container-banner {
+    padding-top: 5%;
+    max-width: 1140px;
+  }
+
+  .title-banner,
+  .title-tujuan {
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .desc-banner,
+  .desc-tujuan {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .img-fluid {
+    margin-top: 0;
+  }
+
+  /* FITUR FITUR */
+  .fitur,
+  .team {
+    height: 100vh;
+    background: conic-gradient(
+      from 0deg at 0% 100%,
+      #24c486 0deg,
+      rgba(36, 196, 134, 0) 360deg
+    );
+  }
+
+  .fitur-title,
+  .team-title {
+    color: #000;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .card-title {
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .card-fitur {
+    padding: 10px;
+  }
+
+  /* TUJUAN */
+  .container-tujuan {
+    padding-top: 5%;
+  }
+
+  /* FOOTER */
+  .footer {
+    height: auto;
+    background-color: #61d5a8;
+  }
+
+  .footer-title {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+}
+
+/* Laptop 1024px */
+@media (max-width: 1024px) {
+  /* TEAM */
+  .team {
+    height: auto;
+  }
+}
