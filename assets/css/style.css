@@ -5,10 +5,16 @@ body {
 }
 
 .color-nav {
-  background-color: #61d5a8;
+  background-color: #22223b;
 }
 
-.nav-link,
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  color: white;
+}
+
 .login {
   font-size: 1.1rem;
   font-weight: 500;
@@ -20,6 +26,7 @@ body {
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61d5a8, 0 0 40px #61d5a8,
     0 0 50px #61d5a8, 0 0 60px #61d5a8, 0 0 70px #61d5a8;
   font-weight: 600;
+  color: white;
 }
 
 .navbar-nav .nav-link:hover {
@@ -32,11 +39,7 @@ body {
 .banner,
 .tujuan {
   height: auto;
-  background: conic-gradient(
-    from 0deg at 0% 100%,
-    #36ec7e 0deg,
-    rgba(255, 255, 255, 0) 360deg
-  );
+  background: white;
 }
 
 .title-banner,
@@ -62,14 +65,18 @@ body {
 }
 
 /* FITUR FITUR */
-.fitur,
+.fitur {
+  height: auto;
+  background-image: url("../img/bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .team {
   height: auto;
-  background: conic-gradient(
-    from 0deg at 0% 100%,
-    #24c486 0deg,
-    rgba(36, 196, 134, 0) 360deg
-  );
+  background-image: url("../img/bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fitur-title,
@@ -87,29 +94,37 @@ body {
 
 .card-title {
   color: #000;
-  font-size: 23px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
 }
 
-.title-img {
+/* .title-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 /* FOOTER */
 .footer {
   height: auto;
-  background-color: #61d5a8;
+  background-color: #22223b;
 }
 
 .footer-title {
-  color: #000;
+  color: #ffffff;
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
+  line-height: normal;
+}
+
+.footer-desc {
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -151,16 +166,12 @@ body {
   .banner,
   .tujuan {
     height: 100vh;
-    background: conic-gradient(
-      from 0deg at 0% 100%,
-      #36ec7e 0deg,
-      rgba(255, 255, 255, 0) 360deg
-    );
+    background: white;
   }
 
   .container-banner {
-    padding-top: 5%;
-    max-width: 1140px;
+    padding-top: 2%;
+    max-width: 1200px;
   }
 
   .title-banner,
@@ -186,14 +197,11 @@ body {
   }
 
   /* FITUR FITUR */
-  .fitur,
-  .team {
+  .fitur {
     height: 100vh;
-    background: conic-gradient(
-      from 0deg at 0% 100%,
-      #24c486 0deg,
-      rgba(36, 196, 134, 0) 360deg
-    );
+    background-image: url("../img/bg-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .fitur-title,
@@ -207,7 +215,7 @@ body {
 
   .card-title {
     color: #000;
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -222,14 +230,19 @@ body {
     padding-top: 5%;
   }
 
+  /* TEAM */
+  .team {
+    height: 100vh;
+  }
+
   /* FOOTER */
   .footer {
     height: auto;
-    background-color: #61d5a8;
+    background-color: #22223b;
   }
 
   .footer-title {
-    color: #000;
+    color: #ffffff;
     font-size: 30px;
     font-style: normal;
     font-weight: 800;
