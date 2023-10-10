@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  symbiofiversapp:
+    image: symbiofivers:latest
+    build: .
+    volumes:
+      - storagesymbiofivers:/app
+    networks:
+      - networksymbiofivers
+  webserversymbiofivers:
+    image: nginx:latest
+    volumes:
+      - storagesymbiofivers:/var/www/html
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 5050:80
+    networks:
+      - networksymbiofivers
+      
+networks:
+  networksymbiofivers: {}
+
+volumes:
+  storagesymbiofivers: {}
