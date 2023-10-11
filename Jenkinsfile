@@ -6,7 +6,7 @@ pipeline{
             steps{
                 echo 'Building....'
                 sh 'docker-compose down -v'
-                sh 'docker-compose up -d'
+                sh 'docker-compose up --build -d'
             }
         }
     }
