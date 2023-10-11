@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* buat smartanimation */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.register {
+  background: #0d6845;
+  height: 140vh;
+}
+
+.col-6 .me-3 {
+  margin-right: 0px !important;
+  padding: 1.5rem !important;
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+.col-6 .ms-3 {
+  margin-left: 0px !important;
+  padding: 1.5rem !important;
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+.d-flex {
+  flex-direction: column;
+}
+
+.bg-daftar {
+  background-color: #332d2d;
+}
+
+.btn-daftar {
+  width: 90px;
+  background-color: #332d2d;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+}
+
+.btn-daftar:hover {
+  background-color: #fff;
+  color: #332d2d;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.btn-login {
+  background-color: #0d6845;
+  width: 90px;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.btn-login:hover {
+  background-color: #fff;
+  color: #0d6845;
+  transition: 0.5s;
+  font-weight: 800;
+}
+
+.text-label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #332d2d;
+}
+
+.title-login {
+  color: #0d6845;
+  font-weight: 600;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .login {
+    background: #0d6845;
+    height: 100vh;
+  }
+
+  .btn-daftar {
+    width: 150px;
+    background-color: #332d2d;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+  }
+
+  .btn-daftar:hover {
+    background-color: #fff;
+    color: #332d2d;
+    transition: 0.5s;
+    font-weight: 600;
+  }
+
+  .btn-login {
+    background-color: #0d6845;
+    width: 150px;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+
+  .btn-login:hover {
+    background-color: #fff;
+    color: #0d6845;
+    transition: 0.5s;
+    font-weight: 800;
+  }
+
+  .col-6 .p-regis {
+    padding-top: 10.5rem !important;
+    padding-bottom: 11rem !important;
+    padding-left: 3rem !important;
+  }
+
+  .d-flex {
+    flex-direction: row;
+    margin: 0rem 5rem;
+  }
+
+  .col-6 .me-3 {
+    margin-right: 0px !important;
+    border-radius: 10px 0px 0px 10px !important;
+  }
+
+  .col-6 .ms-3 {
+    margin-left: 0px !important;
+    border-radius: 0px 10px 10px 0px !important;
+  }
+
+  .text-label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #332d2d;
+  }
+
+  .title-login {
+    color: #0d6845;
+    font-weight: 600;
+  }
+
+  .register {
+    background: #0d6845;
+    height: 100vh;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .login {
+    background: #0d6845;
+    height: 100vh;
+  }
+
+  .box {
+    background-color: azure;
+    padding: 100px;
+    border-radius: 10px;
+  }
+
+  .btn-daftar {
+    width: 150px;
+    background-color: #332d2d;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+  }
+
+  .btn-daftar:hover {
+    background-color: #fff;
+    color: #332d2d;
+    transition: 0.5s;
+    font-weight: 600;
+  }
+
+  .col-6 .p-regis {
+    padding-top: 12rem !important;
+    padding-bottom: 12.5rem !important;
+    padding-left: 3rem !important;
+  }
+
+  .text-label {
+    font-weight: 600;
+    font-size: 20px;
+    color: #332d2d;
+  }
+
+  .title-login {
+    color: #0d6845;
+    font-weight: 600;
+  }
+
+  .register {
+    background: #0d6845;
+    height: 100vh;
+  }
+
+  .col-6 .me-3 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/logo.png" />
+    <!-- Style Sendiri -->
+    <link rel="stylesheet" href="assets/css/login-style.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="col-6">
+          <div class="h-100 text-white bg-daftar rounded-start-3 ms-3 p-regis">
+            <h2>Tidak Memiliki Akun?</h2>
+            <a href="register.html" class="btn btn-daftar">Daftar</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="h-100 p-5 bg-white rounded-end-3 me-3">
+            <h1 class="text-center title-login">Login</h1>
+            <form action="" method="post" id="loginForm">
+              <div class="mb-3">
+                <label for="email" class="form-label text-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label text-label"
+                  >Kata Sandi</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Masukkan Kata Sandi"
+                />
+              </div>
+              <div class="d-grid gap-2 justify-content-md-center">
+                <button type="submit" class="btn btn-login">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const dataUser = [
+        {
+          email: "user@gmail.com",
+          password: "user",
+        },
+        {
+          email: "admin@gmail.com",
+          password: "admin",
+        },
+      ];
+
+      const loginForm = document.getElementById("loginForm");
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const user = dataUser.find(
+          (user) => user.email === email && user.password === password
+        );
+
+        if (user) {
+          alert("Login Berhasil");
+          // arahkan ke index.html
+          sessionStorage.setItem("loggedIn", true);
+          window.location.href = "Landingpagelogin.html";
+        } else {
+          alert("Login Gagal");
+        }
+      });
+    </script>
+  </body>
+</html>

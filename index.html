@@ -16,7 +16,7 @@
     <link rel="icon" href="assets/img/logo.png" />
     <!-- Style Sendiri -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Home</title>
+    <title>Beranda Page</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -26,7 +26,7 @@
           <img src="assets/img/logo.png" alt="Bootstrap" height="70" />
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -40,28 +40,58 @@
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100 align-items-center"
           >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item" id="berandaLogin" style="display: none">
+              <a class="nav-link active" href="Landingpagelogin.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item" id="berandaTidakLogin">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Beranda</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pekerjaan</a>
+              <a class="nav-link" href="Landingpagelogin.html">Pekerjaan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pelatihan</a>
+              <a class="nav-link" href="#pelatihan">Pelatihan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Forum</a>
+              <a class="nav-link" href="#forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
 
             <li class="nav-item">
               <a
                 class="btn btn-light btn-sm login px-4"
-                href="/pages/login.html"
+                href="login.html"
+                id="loginButton"
                 >Login <i class="bi bi-box-arrow-in-right"></i
               ></a>
+
+              <div id="loggedInContent" style="display: none">
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle px-4 text-white"
+                    type="button"
+                    id="loggedInUsername"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#" id="logoutButton"
+                        >Logout</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -351,5 +381,38 @@
         </div>
       </div>
     </footer>
+
+    <!-- Script -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Sendiri -->
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script>
+      const loggedInContent = document.getElementById("loggedInContent");
+      const berandaLogin = document.getElementById("berandaLogin");
+      const berandaTidakLogin = document.getElementById("berandaTidakLogin");
+      const loggedInUsername = document.getElementById("loggedInUsername");
+      const logoutButton = document.getElementById("logoutButton");
+      const loginButton = document.getElementById("loginButton");
+
+      const loggedIn = sessionStorage.getItem("loggedIn");
+
+      if (loggedIn == "true") {
+        loggedInContent.style.display = "block";
+        const username = sessionStorage.getItem("password");
+        console.log(sessionStorage.getItem("password"));
+        loggedInUsername.innerHTML = `<img src="assets/img/user.png" alt="user" height="50" class="me-2" />`;
+        loginButton.style.display = "none";
+        berandaTidakLogin.style.display = "none";
+        berandaLogin.style.display = "block";
+
+        logoutButton.addEventListener("click", () => {
+          sessionStorage.setItem("loggedIn", false);
+          window.location.reload();
+        });
+      } else {
+        loggedInContent.style.display = "none";
+        loginButton.style.display = "block";
+      }
+    </script>
   </body>
 </html>

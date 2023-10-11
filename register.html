@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/logo.png" />
+    <!-- Style Sendiri -->
+    <link rel="stylesheet" href="assets/css/register-style.css" />
+
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="register">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="col-6">
+          <div class="h-100 p-5 bg-white rounded-end-3 me-3">
+            <h1 class="text-center title-login">Daftar</h1>
+            <form action="" method="post">
+              <div class="mb-3">
+                <label for="nama" class="text-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukkan Nama"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="text-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Masukkan Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="text-label">Kata Sandi</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Masukkan Kata Sandi"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password2" class="text-label"
+                  >Konfirmasi Kata Sandi</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password2"
+                  name="password2"
+                  placeholder="Masukkan Kata Sandi"
+                />
+              </div>
+
+              <div class="d-grid gap-2 justify-content-md-center">
+                <button type="submit" class="btn btn-login">Daftar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="h-100 text-white bg-daftar rounded-start-3 ms-3 p-regis">
+            <h2>Sudah Memiliki Akun?</h2>
+            <a href="login.html" class="btn btn-daftar">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
