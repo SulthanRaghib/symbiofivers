@@ -133,6 +133,20 @@ body {
   font-size: 14px;
 }
 
+/* PEKERJAAN */
+.pekerjaan {
+  height: auto;
+  background-color: #d6d6d6;
+}
+
+.title-pekerjaan {
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
 /* Medium Screen */
 @media (min-width: 768px) {
   /* FITUR FITUR */
@@ -157,6 +171,20 @@ body {
   /* TEAM */
   .team {
     height: auto;
+  }
+
+  /* PEKERJAAN */
+  .pekerjaan {
+    height: auto;
+    background-color: #d6d6d6;
+  }
+
+  .title-pekerjaan {
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
   }
 }
 
@@ -244,6 +272,20 @@ body {
   .footer-title {
     color: #ffffff;
     font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  /* PEKERJAAN */
+  .pekerjaan {
+    height: 100vh;
+    background-color: #d6d6d6;
+  }
+
+  .title-pekerjaan {
+    color: #000;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
