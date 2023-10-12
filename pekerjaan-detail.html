@@ -16,7 +16,7 @@
     <link rel="icon" href="assets/img/logo.png" />
     <!-- Style Sendiri -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Beranda</title>
+    <title>Detail Pekerjaan</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -41,9 +41,7 @@
             class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100 align-items-center"
           >
             <li class="nav-item" id="berandaLogin" style="display: none">
-              <a class="nav-link active" href="Landingpagelogin.html"
-                >Beranda</a
-              >
+              <a class="nav-link" href="Landingpagelogin.html">Beranda</a>
             </li>
             <li class="nav-item" id="berandaTidakLogin">
               <a class="nav-link" aria-current="page" href="index.html"
@@ -51,7 +49,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pekerjaan.html">Pekerjaan</a>
+              <a class="nav-link active" href="pekerjaan.html">Pekerjaan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pelatihan">Pelatihan</a>
@@ -99,15 +97,17 @@
     </nav>
 
     <!-- Content -->
-    <section class="pekerjaan py-5" id="pekerjaan">
-      <div class="container pt-5">
+    <section class="pekerjaan-auto py-5" id="pekerjaan">
+      <div class="container mt-4">
+        <!-- kembali dan search -->
         <div class="row">
-          <div class="col-md-6">
-            <img src="assets/img/banner-img.png" alt="" class="img-fluid" />
+          <div class="col-md-6 mb-4">
+            <a href="pekerjaan.html" class="btn btn-light btn-sm px-4"
+              ><i class="bi bi-arrow-left"></i> Kembali</a
+            >
           </div>
           <div class="col-md-6">
-            <!-- search -->
-            <div class="ms-auto">
+            <!-- <div class="ms-auto">
               <div class="input-group mb-3">
                 <input
                   type="text"
@@ -120,56 +120,63 @@
                   <i class="bi bi-search"></i>
                 </button>
               </div>
-            </div>
+            </div> -->
+          </div>
+        </div>
 
-            <!-- card -->
-            <div class="row mt-5">
-              <!-- 1 -->
-              <div class="col-4 d-flex align-items-stretch mb-4">
-                <div class="card" style="width: 15rem; border-radius: 20px">
-                  <a
-                    href="jelajah-pekerjaan-1.html"
-                    class="text-decoration-none"
-                  >
-                    <div class="card-body text-center px-0">
-                      <h5 class="title-pekerjaan">Jelajahi Pekerjaan</h5>
-                    </div>
-                    <img
-                      src="assets/img/Jelajahpekerjaan.png"
-                      class="card-img-top"
-                      alt="Jelajahi Pekerjaan"
-                    />
-                  </a>
-                </div>
-              </div>
+        <div class="card mb-3">
+          <img
+            src="assets/img/detail-pt.png"
+            class="card-img-top"
+            alt="gambar PT"
+          />
+          <div class="card-body">
+            <h5 class="card-title">PT. Kita bisa Teknologi</h5>
+            <p class="card-text">
+              PT. KITA BISA TEKNOLOGI juga dikenal sebagai iT-Possible adalah
+              perusahaan milik Indonesia yang didirikan pada tahun 2016
+              berlokasi di Jakarta. Menyediakan solusi dan layanan inovatif
+              berbasis Teknologi Informasi seperti pengembangan aplikasi
+              seluler, layanan dukungan TI sesuai permintaan, Helpdesk, dan
+              layanan konsultasi. Kami juga menjual dan mendukung rangkaian
+              lengkap perangkat keras dan perangkat lunak Infrastruktur TI dan
+              menawarkan kontrak pemeliharaan melalui staf teknik kami yang
+              berpengalaman.
+            </p>
+            <p class="card-text">
+              Visi kami Kami bertujuan untuk menjadi perusahaan Teknologi
+              Informasi terkemuka dan dapat diandalkan di Indonesia dengan
+              memberikan layanan profesional dan terbaik.
+            </p>
+            <p class="card-text mb-0">Misi kita</p>
+            <ul>
+              <li>
+                Mengembangkan usaha secara berkelanjutan dengan memberikan
+                pelayanan yang memuaskan kepada pelanggan
+              </li>
+              <li>Memberikan pelayanan terbaik dan respon cepat</li>
+              <li>
+                Memenuhi kebutuhan pelanggan dengan dukungan sumber daya manusia
+                yang profesional
+              </li>
+              <li>Keadilan dan transparan</li>
+            </ul>
 
-              <!-- 2 -->
-              <div class="col-4 d-flex align-items-stretch mb-4">
-                <div
-                  class="card bg-dark"
-                  style="width: 15rem; border-radius: 20px"
-                >
-                  <div class="card-body text-center px-0">
-                    <h5 class="title-pekerjaan text-white">Portofolio</h5>
-                  </div>
-                  <img
-                    src="assets/img/fortopolio.png"
-                    class="card-img-top"
-                    alt="Portofolio"
-                  />
-                </div>
-              </div>
+            <p class="card-text mb-0">Syarat melamarnya di antaranya:</p>
+            <ul>
+              <li>berpengalaman menggunakan HTML/CSS/JavaScript</li>
+              <li>familier dengan Vue atau React</li>
+              <li>bisa berkomunikasi dengan baik</li>
+            </ul>
 
-              <!-- 3 -->
-              <div class="col-4 d-flex align-items-stretch mb-4">
-                <div class="card" style="width: 15rem; border-radius: 20px">
-                  <div class="card-body text-center px-0">
-                    <h5 class="title-pekerjaan">CV</h5>
-                  </div>
-                  <img src="assets/img/CV.png" class="card-img-top" alt="CV" />
-                </div>
-              </div>
-            </div>
+            <p class="card-text text-end">
+              <a
+                href="pekerjaan-lamar.html"
+                class="btn btn-danger rounded-4 px-4"
+              >
+                Kirim Lamaran
+              </a>
+            </p>
           </div>
         </div>
       </div>

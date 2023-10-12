@@ -139,6 +139,11 @@ body {
   background-color: #d6d6d6;
 }
 
+.pekerjaan-auto {
+  height: auto;
+  background-color: #d6d6d6;
+}
+
 .title-pekerjaan {
   color: #000;
   font-size: 1rem;
@@ -295,6 +300,13 @@ body {
 /* Laptop 1024px */
 @media (max-width: 1024px) {
   /* TEAM */
+  .team {
+    height: auto;
+  }
+}
+
+/* Laptop 1050px */
+@media (max-width: 1050px) {
   .team {
     height: auto;
   }
