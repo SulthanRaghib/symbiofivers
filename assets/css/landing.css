@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.color-nav {
+  background-color: #22223b;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61d5a8, 0 0 40px #61d5a8,
+    0 0 50px #61d5a8, 0 0 60px #61d5a8, 0 0 70px #61d5a8;
+  font-weight: 600;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61d5a8, 0 0 40px #61d5a8,
+    0 0 50px #61d5a8, 0 0 60px #61d5a8, 0 0 70px #61d5a8;
+  font-weight: 600;
+}
+
+/* BANNER */
+.banner
+{
+  height: auto;
+  background: white;
+}
+
+.btn-primary i.fas.fa-search {
+    color: black;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+        }
+  
+        .card {
+            
+            display: flex; /* Menggunakan flexbox */
+            width: 10%;
+            border-radius: 25px;
+          }
+          
+          .card .card-body {
+            flex: 0; /* Bagian kiri akan mengambil ruang sebanyak mungkin */
+
+          }
+          
+          .card .card-img-top {
+            width: 13rem; /* Lebar gambar tetap */
+          }
+          
+
+.card-title{
+  text-align: center; /* Teks judul tengah */
+  position: static;
+  
+}
+
+.img-fluid {
+    margin-top: 40px;
+  }
+
+  /* FOOTER */
+.footer {
+    height: auto;
+    background-color: #22223b;
+  }
+  
+  .footer-title {
+    color: #ffffff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .footer-desc {
+    color: #ffffff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .footer-copyright {
+    color: #034f24;
+    font-size: 14px;
+  }
+  
+  /* Medium Screen */
+  @media (min-width: 768px) 
+  {
+    /* FITUR FITUR */
+    .card-title {
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }}
