@@ -267,7 +267,7 @@
 
         logoutButton.addEventListener("click", () => {
           sessionStorage.setItem("loggedIn", false);
-          window.location.reload();
+          window.location.href = "index.html";
         });
       } else {
         loggedInContent.style.display = "none";
