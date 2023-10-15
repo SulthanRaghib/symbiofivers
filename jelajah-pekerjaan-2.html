@@ -16,7 +16,7 @@
     <link rel="icon" href="assets/img/logo.png" />
     <!-- Style Sendiri -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Beranda Page</title>
+    <title>Jelajah Pekerjaan</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -51,16 +51,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pekerjaan.html">Pekerjaan</a>
+              <a class="nav-link" href="Landingpagelogin.html">Pekerjaan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pelatihan.html">Pelatihan</a>
+              <a class="nav-link" href="#pelatihan">Pelatihan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#forum">Forum</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kontak.html">Kontak</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
 
             <li class="nav-item">
@@ -103,7 +103,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <a href="pekerjaan.html" class="btn btn-light btn-sm px-4"
+            <a href="pekerjaan.html" class="btn btn-light btn-sm px-4 mb-3"
               ><i class="bi bi-arrow-left"></i> Kembali</a
             >
           </div>
@@ -120,8 +120,93 @@
                 <button class="btn btn-dark" type="button" id="button-addon2">
                   <i class="bi bi-search"></i>
                 </button>
+                <br />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Menggunakan justify-content-center untuk mengatur kartu ke tengah -->
+          <div class="col-md-8">
+            <div
+              class="card text-right mx-auto"
+              style="width: auto; border-radius: 10px"
+            >
+              <div class="card-body">
+                <button type="button" class="btn btn-dark">Kebutuhan</button>
+                <button type="button" class="btn btn-light">Rekomendasi</button>
+                <div class="card-line"></div>
+                <h5 class="card-title fs-3">Keahlian</h5>
+
+                <div class="mb-3 row align-items-center">
+                  <label
+                    for="javascript"
+                    class="col-sm-2 col-form-label fw-semibold"
+                    >JavaScript</label
+                  >
+                  <div class="col-sm-10">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3 row align-items-center">
+                  <label for="react" class="col-sm-2 col-form-label fw-semibold"
+                    >React</label
+                  >
+                  <div class="col-sm-10">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3 row align-items-center">
+                  <label for="css" class="col-sm-2 col-form-label fw-semibold"
+                    >CSS</label
+                  >
+                  <div class="col-sm-10">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 60%"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <div class="d-flex justify-content-between">
+              <img src="assets/img/HTML.png" class="img-fluid" alt="logo" />
+              <img src="assets/img/CSS.png" class="img-fluid" alt="logo" />
+            </div>
+            <img src="assets/img/JS.png" class="img-fluid" alt="logo" />
           </div>
         </div>
       </div>
@@ -157,7 +242,7 @@
             <p class="footer-desc">
               <i class="bi bi-envelope-fill me-2"></i>
               <a href="mailto:symbiofivers@gmail.com"
-                >Kontak@symbiofivers.my.id</a
+                >contact@symbiofivers.my.id</a
               >
             </p>
           </div>
@@ -183,7 +268,10 @@
             </form>
           </div>
         </div>
-        <hr style="background-color: white; height: 5px" />
+        <div class="row justify-content-center">
+          <hr class="border border-white border opacity" style="width: 80rem" />
+        </div>
+
         <div class="row">
           <div class="col-md-12 text-end">
             <p class="footer-copyright text-white">

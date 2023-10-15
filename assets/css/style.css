@@ -152,6 +152,20 @@ body {
   line-height: normal;
 }
 
+.card-line {
+  border: 2px solid #000000;
+  width: calc(100% + 1rem);
+  margin: 0 auto 1rem auto;
+}
+.progress {
+  background-color: #000000;
+}
+.progress,
+.progress-stacked {
+  height: 2rem;
+  border-radius: 2rem;
+}
+
 /* Medium Screen */
 @media (min-width: 768px) {
   /* FITUR FITUR */
