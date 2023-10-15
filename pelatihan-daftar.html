@@ -16,7 +16,37 @@
     <link rel="icon" href="assets/img/logo.png" />
     <!-- Style Sendiri -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Beranda</title>
+    <title>Daftar Pelatihan</title>
+
+    <style>
+      .payment-option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .payment-option input[type="radio"] {
+        display: none;
+      }
+
+      .payment-option label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .payment-option img {
+        width: 100px;
+        height: 40px;
+        margin-right: 10px;
+        outline: 2px solid #9c9292;
+        border-radius: 5px;
+      }
+
+      .payment-option input[type="radio"]:checked + label img {
+        outline: 2px solid #dc3545;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -41,9 +71,7 @@
             class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100 align-items-center"
           >
             <li class="nav-item" id="berandaLogin" style="display: none">
-              <a class="nav-link active" href="Landingpagelogin.html"
-                >Beranda</a
-              >
+              <a class="nav-link" href="Landingpagelogin.html">Beranda</a>
             </li>
             <li class="nav-item" id="berandaTidakLogin">
               <a class="nav-link" aria-current="page" href="index.html"
@@ -54,7 +82,7 @@
               <a class="nav-link" href="pekerjaan.html">Pekerjaan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pelatihan.html">Pelatihan</a>
+              <a class="nav-link active" href="pelatihan.html">Pelatihan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#forum">Forum</a>
@@ -99,77 +127,176 @@
     </nav>
 
     <!-- Content -->
-    <section class="pekerjaan py-5" id="pekerjaan">
-      <div class="container pt-5">
+    <section class="pekerjaan-auto py-5" id="pekerjaan">
+      <div class="container mt-4">
+        <!-- kembali dan search -->
         <div class="row">
-          <div class="col-md-6">
-            <img src="assets/img/banner-img.png" alt="" class="img-fluid" />
+          <div class="col-md-6 mb-4">
+            <a href="pekerjaan-detail.html" class="btn btn-light btn-sm px-4"
+              ><i class="bi bi-arrow-left"></i> Kembali</a
+            >
           </div>
           <div class="col-md-6">
-            <!-- search -->
-            <div class="ms-auto">
-              <div class="input-group mb-3">
+            <!-- <div class="ms-auto">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Cari Pekerjaan"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button class="btn btn-dark" type="button" id="button-addon2">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </div> -->
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <h1 class="text-center">Form Pendaftaran</h1>
+          <div class="card w-100 p-5">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Masukkan Email Anda"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="nama" class="form-label fw-semibold">Nama</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Cari Pekerjaan"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
+                  id="nama"
+                  placeholder="Masukkan Nama Anda"
                 />
-                <button class="btn btn-dark" type="button" id="button-addon2">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- card -->
-            <div class="row mt-5">
-              <!-- 1 -->
-              <div class="col-4 d-flex align-items-stretch mb-4">
-                <div class="card" style="width: 15rem; border-radius: 20px">
-                  <a
-                    href="jelajah-pekerjaan-1.html"
-                    class="text-decoration-none"
-                  >
-                    <div class="card-body text-center px-0">
-                      <h5 class="title-pekerjaan">Jelajahi Pekerjaan</h5>
-                    </div>
-                    <img
-                      src="assets/img/Jelajahpekerjaan.png"
-                      class="card-img-top"
-                      alt="Jelajahi Pekerjaan"
-                    />
-                  </a>
-                </div>
               </div>
 
-              <!-- 2 -->
-              <div class="col-4 d-flex align-items-stretch mb-4">
-                <div
-                  class="card bg-dark"
-                  style="width: 15rem; border-radius: 20px"
+              <div class="mb-3">
+                <label for="no-telp" class="form-label fw-semibold"
+                  >No. Telepon</label
                 >
-                  <div class="card-body text-center px-0">
-                    <h5 class="title-pekerjaan text-white">Portofolio</h5>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="no-telp"
+                  placeholder="Masukkan No. Telepon Anda"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="jenis-kelamin" class="form-label fw-semibold"
+                  >Jenis Kelamin</label
+                >
+                <div class="d-flex align-items-center">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="jenis-kelamin"
+                      id="laki-laki"
+                    />
+                    <label class="form-check-label me-4" for="laki-laki">
+                      Laki-Laki
+                    </label>
                   </div>
-                  <img
-                    src="assets/img/fortopolio.png"
-                    class="card-img-top"
-                    alt="Portofolio"
-                  />
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="jenis-kelamin"
+                      id="perempuan"
+                    />
+                    <label class="form-check-label" for="perempuan">
+                      Perempuan
+                    </label>
+                  </div>
                 </div>
               </div>
 
-              <!-- 3 -->
-              <div class="col-4 d-flex align-items-stretch mb-4">
-                <div class="card" style="width: 15rem; border-radius: 20px">
-                  <div class="card-body text-center px-0">
-                    <h5 class="title-pekerjaan">CV</h5>
+              <div class="mb-3">
+                <label for="usia" class="form-label fw-semibold">Usia</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usia"
+                  placeholder="Masukkan Usia Anda"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="pembayaran" class="form-label fw-semibold"
+                  >Pembayaran</label
+                >
+                <p class="text-muted">Masukkan Pembayaran Anda</p>
+                <!-- buat input card pembayaran dengan bank -->
+                <div class="d-flex justify-content-start">
+                  <div class="payment-option">
+                    <input
+                      type="radio"
+                      id="BRI"
+                      name="paymentMethod"
+                      value="BRI"
+                    />
+                    <label for="BRI">
+                      <img src="assets/img/payment-1.png" alt="BRI" />
+                    </label>
                   </div>
-                  <img src="assets/img/CV.png" class="card-img-top" alt="CV" />
+
+                  <div class="payment-option">
+                    <input
+                      type="radio"
+                      id="BRI"
+                      name="paymentMethod"
+                      value="BRI"
+                    />
+                    <label for="BRI">
+                      <img src="assets/img/payment-2.png" alt="BRI" />
+                    </label>
+                  </div>
+
+                  <div class="payment-option">
+                    <input
+                      type="radio"
+                      id="BRI"
+                      name="paymentMethod"
+                      value="BRI"
+                    />
+                    <label for="BRI">
+                      <img src="assets/img/payment-3.png" alt="BRI" />
+                    </label>
+                  </div>
+
+                  <div class="payment-option">
+                    <input
+                      type="radio"
+                      id="BRI"
+                      name="paymentMethod"
+                      value="BRI"
+                    />
+                    <label for="BRI">
+                      <img src="assets/img/payment-4.png" alt="BRI" />
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div class="d-flex justify-content-end">
+                <a
+                  href="pelatihan-pendaftaran.html"
+                  class="btn btn-danger rounded-4 px-4"
+                  >Kirim Pendaftaran</a
+                >
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -273,6 +400,10 @@
         loggedInContent.style.display = "none";
         loginButton.style.display = "block";
       }
+    </script>
+    <script>
+      // hapus checked radio button jika pilih pembayaran lain
+      const pembayaranLain = document.getElementById("pembayaran-lain");
     </script>
   </body>
 </html>
