@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/logo.png" />
+    <!-- Style Sendiri -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Jelajah Pekerjaan</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg color-nav">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Bootstrap" height="70" />
+        </a>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100 align-items-center"
+          >
+            <li class="nav-item" id="berandaLogin" style="display: none">
+              <a class="nav-link active" href="Landingpagelogin.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item" id="berandaTidakLogin">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Landingpagelogin.html">Pekerjaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pelatihan">Pelatihan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#forum">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="btn btn-light btn-sm login px-4"
+                href="login.html"
+                id="loginButton"
+                >Login <i class="bi bi-box-arrow-in-right"></i
+              ></a>
+
+              <div id="loggedInContent" style="display: none">
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle px-4 text-white"
+                    type="button"
+                    id="loggedInUsername"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#" id="logoutButton"
+                        >Logout</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="pekerjaan py-5" id="pekerjaan-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="pekerjaan.html" class="btn btn-light btn-sm px-4 mb-3"
+              ><i class="bi bi-arrow-left"></i> Kembali</a
+            >
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="d-flex justify-content-between align-items-center">
+        <h5
+          class="page-title fs-3"
+          style="font-weight: bold; margin-left: 55px"
+        >
+          Tema Portofolio
+        </h5>
+        <button
+          type="button"
+          class="btn btn-danger rounded-4 px-4"
+          style="margin-right: 50px"
+        >
+          Buat
+        </button>
+      </div>
+      <div class="card-line" style="width: 95%; margin: 0 auto"></div>
+      <br />
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 30rem; background-color: black">
+              <img
+                src="assets/img/Tema-1.png"
+                class="card-img-top"
+                alt="tema Portofolio"
+              />
+              <div
+                class="card-body d-flex justify-content-between align-items-center"
+              >
+                <p class="card-text" style="font-weight: bold; color: white">
+                  Hegen
+                </p>
+                <button type="button" class="btn btn-danger rounded-4 px-5">
+                  Gunakan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 30rem; background-color: black">
+              <img
+                src="assets/img/Tema-2.png"
+                class="card-img-top"
+                alt="tema Portofolio"
+              />
+              <div
+                class="card-body d-flex justify-content-between align-items-center"
+              >
+                <p class="card-text" style="font-weight: bold; color: white">
+                  Marta
+                </p>
+                <button type="button" class="btn btn-danger rounded-4 px-5">
+                  Gunakan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 30rem; background-color: black">
+              <img
+                src="assets/img/Tema-3.png"
+                class="card-img-top"
+                alt="tema Portofolio"
+              />
+              <div
+                class="card-body d-flex justify-content-between align-items-center"
+              >
+                <p class="card-text" style="font-weight: bold; color: white">
+                  Andreas
+                </p>
+                <button type="button" class="btn btn-danger rounded-4 px-5">
+                  Gunakan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 30rem; background-color: black">
+              <img
+                src="assets/img/Tema-4.png"
+                class="card-img-top"
+                alt="tema Portofolio"
+              />
+              <div
+                class="card-body d-flex justify-content-between align-items-center"
+              >
+                <p class="card-text" style="font-weight: bold; color: white">
+                  Thomas
+                </p>
+                <button type="button" class="btn btn-danger rounded-4 px-5">
+                  Gunakan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 30rem; background-color: black">
+              <img
+                src="assets/img/Tema-5.png"
+                class="card-img-top"
+                alt="tema Portofolio"
+              />
+              <div
+                class="card-body d-flex justify-content-between align-items-center"
+              >
+                <p class="card-text" style="font-weight: bold; color: white">
+                  Marcendes
+                </p>
+                <button type="button" class="btn btn-danger rounded-4 px-5">
+                  Gunakan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 30rem; background-color: black">
+              <img
+                src="assets/img/Tema-6.png"
+                class="card-img-top"
+                alt="tema Portofolio"
+              />
+              <div
+                class="card-body d-flex justify-content-between align-items-center"
+              >
+                <p class="card-text" style="font-weight: bold; color: white">
+                  Lukas
+                </p>
+                <button type="button" class="btn btn-danger rounded-4 px-5">
+                  Gunakan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="footer-title">
+              <img src="assets/img/logo.png" alt="logo" height="90" />
+            </h5>
+            <a href="#" class="me-3">
+              <img src="assets/img/fb.png" alt="facebook" height="40"
+            /></a>
+            <a href="#" class="me-3">
+              <img src="assets/img/ig.png" alt="instagram" height="40"
+            /></a>
+            <a href="#" class="me-3">
+              <img src="assets/img/tw.png" alt="twitter" height="40"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-title">HUBUNGI KAMI</h5>
+            <p class="footer-desc">
+              <i class="bi bi-geo-alt-fill me-2"></i> Jalan Ahmad Yani,
+              Tanjungpinang,Kepulauan Riau, Indonesia
+            </p>
+            <p class="footer-desc">
+              <i class="bi bi-telephone-fill me-2"></i> +62 893 4576 2253
+            </p>
+            <p class="footer-desc">
+              <i class="bi bi-envelope-fill me-2"></i>
+              <a href="mailto:symbiofivers@gmail.com"
+                >Kontak@symbiofivers.my.id</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-title">BERLANGANAN</h5>
+            <p class="footer-desc">
+              Untuk mendapatkan informasi terbaru dari symbiofivers silahkan
+              masukkan email anda di bawah ini :
+            </p>
+            <form action="">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukkan Email Anda"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn btn-light" type="button" id="button-addon2">
+                  <i class="bi bi-envelope"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr style="background-color: white; height: 5px" />
+        <div class="row">
+          <div class="col-md-12 text-end">
+            <p class="footer-copyright text-white">
+              &copy; 2023 Symbiofivers Group | All Right Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Sendiri -->
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script>
+      const loggedInContent = document.getElementById("loggedInContent");
+      const berandaLogin = document.getElementById("berandaLogin");
+      const berandaTidakLogin = document.getElementById("berandaTidakLogin");
+      const loggedInUsername = document.getElementById("loggedInUsername");
+      const logoutButton = document.getElementById("logoutButton");
+      const loginButton = document.getElementById("loginButton");
+
+      const loggedIn = sessionStorage.getItem("loggedIn");
+
+      if (loggedIn == "true") {
+        loggedInContent.style.display = "block";
+        const username = sessionStorage.getItem("password");
+        console.log(sessionStorage.getItem("password"));
+        loggedInUsername.innerHTML = `<img src="assets/img/user.png" alt="user" height="50" class="me-2" />`;
+        loginButton.style.display = "none";
+        berandaTidakLogin.style.display = "none";
+        berandaLogin.style.display = "block";
+
+        logoutButton.addEventListener("click", () => {
+          sessionStorage.setItem("loggedIn", false);
+          window.location.href = "index.html";
+        });
+      } else {
+        loggedInContent.style.display = "none";
+        loginButton.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
