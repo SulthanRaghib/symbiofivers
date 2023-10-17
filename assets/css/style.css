@@ -212,7 +212,7 @@ body {
   /* BANNER */
   .banner,
   .tujuan {
-    height: 100vh;
+    height: auto;
     background: white;
   }
 
@@ -245,7 +245,7 @@ body {
 
   /* FITUR FITUR */
   .fitur {
-    height: 100vh;
+    height: auto;
     background-image: url("../img/bg-1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,7 +279,7 @@ body {
 
   /* TEAM */
   .team {
-    height: 100vh;
+    height: auto;
   }
 
   /* FOOTER */
@@ -298,7 +298,7 @@ body {
 
   /* PEKERJAAN */
   .pekerjaan {
-    height: 100vh;
+    height: auto;
     background-color: #d6d6d6;
   }
 
