@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Input</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .custom-file-input {
+        position: relative;
+      }
+
+      .input-hidden {
+        display: none;
+      }
+
+      label {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      #fileName {
+        margin-top: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="custom-file-input">
+      <input type="file" id="fileInput" class="input-hidden" />
+      <label for="fileInput">Pilih File</label>
+      <span id="fileName">Tidak ada file yang dipilih</span>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document
+        .getElementById("fileInput")
+        .addEventListener("change", function () {
+          var fileName = this.value.split("\\").pop();
+          document.getElementById("fileName").innerHTML = fileName;
+        });
+    </script>
+  </body>
+</html>

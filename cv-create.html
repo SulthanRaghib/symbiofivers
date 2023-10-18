@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/logo.png" />
+    <!-- Style Sendiri -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>CV Create</title>
+
+    <style>
+      .input-hidden {
+        display: none;
+      }
+
+      .add-file-img {
+        cursor: pointer;
+        color: #000aff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg color-nav">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Bootstrap" height="70" />
+        </a>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100 align-items-center"
+          >
+            <li class="nav-item" id="berandaLogin" style="display: none">
+              <a class="nav-link active" href="Landingpagelogin.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item" id="berandaTidakLogin">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pekerjaan.html">Pekerjaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pelatihan.html">Pelatihan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forum-diskusi.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="btn btn-light btn-sm login px-4"
+                href="login.html"
+                id="loginButton"
+                >Login <i class="bi bi-box-arrow-in-right"></i
+              ></a>
+
+              <div id="loggedInContent" style="display: none">
+                <div class="dropdown">
+                  <a
+                    class="dropdown-toggle px-4 text-white"
+                    type="button"
+                    id="loggedInUsername"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#" id="logoutButton"
+                        >Logout</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="pekerjaan py-5" id="pekerjaan-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="CV-Template.html" class="btn btn-light btn-sm px-4 mb-3"
+              ><i class="bi bi-arrow-left"></i> Kembali</a
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <!-- Input 1 -->
+                    <div class="mb-3">
+                      <label
+                        for="pekerjaan-yang-di-cari"
+                        class="form-label fw-semibold"
+                        >Pekerjaan yang dicari</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Masukkan Pencarian Pekerjaan"
+                      />
+                    </div>
+
+                    <!-- Input 2 -->
+                    <div class="mb-3">
+                      <label for="nama" class="form-label fw-semibold"
+                        >Nama</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Masukkan Nama Anda"
+                      />
+                    </div>
+
+                    <!-- Input 3 -->
+                    <div class="mb-3">
+                      <label for="no-telepone" class="form-label fw-semibold"
+                        >No. Telepone</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Masukkan No.Telepon Anda"
+                      />
+                    </div>
+
+                    <!-- Input 4 -->
+                    <div class="mb-3">
+                      <label
+                        for="tempat-tanggal-lahir"
+                        class="form-label fw-semibold"
+                        >Tempat Tanggal Lahir</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Masukkan Tanggal Lahir Anda"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- Input 5 -->
+                    <div class="mb-3">
+                      <div class="input-group mb-3 mt-4">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="assets/img/user.png"
+                            alt="upload"
+                            height="40"
+                            class="me-2"
+                          />
+                          <div class="d-flex flex-column">
+                            <input
+                              type="file"
+                              id="fileInput"
+                              class="input-hidden"
+                            />
+                            <label for="fileInput" class="add-file-img"
+                              ><i class="bi bi-plus"></i> Foto</label
+                            >
+                            <span id="fileName" style="font-size: small"
+                              >Tidak ada file yang dipilih</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Input 6 -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label fw-semibold"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Masukkan Alamat Email Anda"
+                      />
+                    </div>
+
+                    <!-- Input 7 -->
+                    <div class="mb-3">
+                      <label
+                        for="tempat-tanggal-lahir"
+                        class="form-label fw-semibold"
+                        >Alamat</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Masukkan Alamat Anda"
+                        rows="1"
+                      ></textarea>
+                    </div>
+
+                    <!-- Input 6 -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label fw-semibold"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Masukkan Alamat Email Anda"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Input 7 -->
+                <div class="row">
+                  <div class="mb-3">
+                    <label
+                      for="pekerjaan-yang-di-cari"
+                      class="form-label fw-semibold"
+                      >Ringkasan profesional</label
+                    >
+                    <p>
+                      Tulis 2-4 kalimat pendek & energik untuk menarik minat
+                      pembaca! Sebutkan peran Anda, pengalaman & yang paling
+                      penting - pencapaian terbesar Anda. Kualitas dan
+                      keterampilan terbaik.
+                    </p>
+                    <textarea
+                      class="form-control"
+                      placeholder="Tuliskan Pengalaman Anda "
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <!-- Input 8 -->
+                <div class="row mb-3">
+                  <div class="mb-3">
+                    <label
+                      for="pekerjaan-yang-di-cari"
+                      class="form-label fw-semibold"
+                      >Riwayat pekerjaan</label
+                    >
+                    <p class="mb-3">
+                      Tunjukkan pengalaman yang relevan (10 tahun terakhir),
+                      gunakan poin-poin untuk mencatat pencapaian Anda, jika
+                      memungkinkan - gunakan nomor/fakta
+                    </p>
+                    <input
+                      type="file"
+                      name=""
+                      id="fileInput"
+                      class="input-hidden"
+                    />
+                    <label for="" class="add-file-img"
+                      ><i class="bi bi-plus"></i> Riwayat Pekerjaan</label
+                    >
+                    <input type="file" id="fileInput" class="input-hidden" />
+                  </div>
+                </div>
+
+                <!-- Input 9 -->
+                <div class="row mb-3">
+                  <div class="mb-3">
+                    <label
+                      for="pekerjaan-yang-di-cari"
+                      class="form-label fw-semibold"
+                      >Situs Web dan Tautan Sosial</label
+                    >
+                    <p class="mb-3">
+                      Anda dapat menambahkan link ke website jika ingin
+                      portofolio Anda terlihat oleh manajer
+                    </p>
+                    <input
+                      type="file"
+                      name=""
+                      id="fileInput"
+                      class="input-hidden"
+                    />
+                    <label for="" class="add-file-img"
+                      ><i class="bi bi-plus"></i> Link</label
+                    >
+                    <input type="file" id="fileInput" class="input-hidden" />
+                  </div>
+                </div>
+
+                <!-- Input 10 -->
+                <div class="row mb-3">
+                  <div class="mb-3">
+                    <label
+                      for="pekerjaan-yang-di-cari"
+                      class="form-label fw-semibold"
+                      >Keahlian</label
+                    >
+                    <p class="mb-3">Tambahkan Keahlian Anda</p>
+                    <input
+                      type="file"
+                      name=""
+                      id="fileInput"
+                      class="input-hidden"
+                    />
+                    <label for="" class="add-file-img"
+                      ><i class="bi bi-plus"></i> Keahlian</label
+                    >
+                    <input type="file" id="fileInput" class="input-hidden" />
+                  </div>
+                </div>
+
+                <!-- Input 11 -->
+                <div class="row mb-3">
+                  <div class="mb-3">
+                    <label
+                      for="pekerjaan-yang-di-cari"
+                      class="form-label fw-semibold"
+                      >Tambahkan Bagian</label
+                    >
+                    <p class="mb-3"></p>
+                    <input
+                      type="file"
+                      name=""
+                      id="fileInput"
+                      class="input-hidden"
+                    />
+                    <label for="" class="add-file-img"
+                      ><i class="bi bi-plus"></i> Bagian</label
+                    >
+                    <input type="file" id="fileInput" class="input-hidden" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row mb-3">
+              <div class="card rounded-5">
+                <div class="card-body">
+                  <div class="d-flex justify-content-around align-items-center">
+                    <a href="CV-Template.html" class="btn btn-danger rounded-4"
+                      >Pilih Template</a
+                    >
+                    <h4 class="m-0">- Aa +</h4>
+                    <a href="#downloa-dpdf" class="btn btn-danger rounded-4"
+                      >Download PDF</a
+                    >
+                    <img
+                      src="assets/img/strip-line.png"
+                      alt="preview"
+                      height="30"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- hasil -->
+            <div class="row">
+              <div class="card">
+                <div class="card-body" style="height: 50rem"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="footer-title">
+              <img src="assets/img/logo.png" alt="logo" height="90" />
+            </h5>
+            <a href="#" class="me-3">
+              <img src="assets/img/fb.png" alt="facebook" height="40"
+            /></a>
+            <a href="#" class="me-3">
+              <img src="assets/img/ig.png" alt="instagram" height="40"
+            /></a>
+            <a href="#" class="me-3">
+              <img src="assets/img/tw.png" alt="twitter" height="40"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-title">HUBUNGI KAMI</h5>
+            <p class="footer-desc">
+              <i class="bi bi-geo-alt-fill me-2"></i> Jalan Ahmad Yani,
+              Tanjungpinang,Kepulauan Riau, Indonesia
+            </p>
+            <p class="footer-desc">
+              <i class="bi bi-telephone-fill me-2"></i> +62 893 4576 2253
+            </p>
+            <p class="footer-desc">
+              <i class="bi bi-envelope-fill me-2"></i>
+              <a href="mailto:symbiofivers@gmail.com"
+                >Kontak@symbiofivers.my.id</a
+              >
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-title">BERLANGGANAN</h5>
+            <p class="footer-desc">
+              Untuk mendapatkan informasi terbaru dari symbiofivers silahkan
+              masukkan email anda di bawah ini :
+            </p>
+            <form action="">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukkan Email Anda"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn btn-light" type="button" id="button-addon2">
+                  <i class="bi bi-envelope"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr style="background-color: white; height: 5px" />
+        <div class="row">
+          <div class="col-md-12 text-end">
+            <p class="footer-copyright text-white">
+              &copy; 2023 Symbiofivers Group | All Right Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Sendiri -->
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script>
+      const loggedInContent = document.getElementById("loggedInContent");
+      const berandaLogin = document.getElementById("berandaLogin");
+      const berandaTidakLogin = document.getElementById("berandaTidakLogin");
+      const loggedInUsername = document.getElementById("loggedInUsername");
+      const logoutButton = document.getElementById("logoutButton");
+      const loginButton = document.getElementById("loginButton");
+
+      const loggedIn = sessionStorage.getItem("loggedIn");
+
+      if (loggedIn == "true") {
+        loggedInContent.style.display = "block";
+        const username = sessionStorage.getItem("password");
+        console.log(sessionStorage.getItem("password"));
+        loggedInUsername.innerHTML = `<img src="assets/img/user.png" alt="user" height="50" class="me-2" />`;
+        loginButton.style.display = "none";
+        berandaTidakLogin.style.display = "none";
+        berandaLogin.style.display = "block";
+
+        logoutButton.addEventListener("click", () => {
+          sessionStorage.setItem("loggedIn", false);
+          window.location.href = "index.html";
+        });
+      } else {
+        loggedInContent.style.display = "none";
+        loginButton.style.display = "block";
+      }
+    </script>
+    <script>
+      document
+        .getElementById("fileInput")
+        .addEventListener("change", function () {
+          var fileName = this.value.split("\\").pop();
+          document.getElementById("fileName").innerHTML = fileName;
+        });
+    </script>
+  </body>
+</html>
