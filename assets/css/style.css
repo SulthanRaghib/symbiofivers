@@ -205,6 +205,10 @@ body {
     font-weight: 800;
     line-height: normal;
   }
+
+  .cari-forum {
+    width: 20rem;
+  }
 }
 
 /* Large Screen */
@@ -308,6 +312,10 @@ body {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+  }
+
+  .cari-forum {
+    width: 25rem;
   }
 }
 
