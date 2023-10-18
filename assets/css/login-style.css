@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono&display=swap");
 
-@keyframes dissolve {
+/* @keyframes dissolve {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -16,7 +16,7 @@ body {
 .login {
   background: #0d6845;
   height: 100vh;
-  animation: dissolve 1s ease-in-out;
+  /* animation: dissolve 1s ease-in-out; */
 }
 
 .col-6 .me-3 {
